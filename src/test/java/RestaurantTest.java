@@ -1,6 +1,6 @@
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-import org.mockito.Mockito;
+
 import java.time.LocalTime;
 
 import static org.junit.jupiter.api.Assertions.*;
@@ -72,10 +72,6 @@ class RestaurantTest {
         int totalCost;
         List<Item> selectedItems = null;
         totalCost = restaurant.getTotalCost(selectedItems) ;
-        test_add_Restaurant();
-        List<String> selectedItemNames = Arrays.asList("Sweet corn soup", "Vegetable lasagne" ) ;
-        totalCost = restaurant.getTotalCost(selectedItemNames) ;
-        assertEquals(388, totalCost);
     }
 
     //<<<<<<<<<<<<<<<<<<<<<<<<<ORDERTOTAL>>>>>>>>>>>>>>>>>>>>>>
