@@ -65,4 +65,14 @@ class RestaurantTest {
                 ()->restaurant.removeFromMenu("French fries"));
     }
     //<<<<<<<<<<<<<<<<<<<<<<<MENU>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+    //<<<<<<<<<<<<<<<<<<<<<<<<<ORDERTOTAL>>>>>>>>>>>>>>>>>>>>>>
+
+    @Test
+    public void return_order_bill{
+        int totalCost;
+        List<Item> selectedItems = null;
+        totalCost = restaurant.getTotalCost(selectedItems) ;
+    }
+
+    //<<<<<<<<<<<<<<<<<<<<<<<<<ORDERTOTAL>>>>>>>>>>>>>>>>>>>>>>
 }
